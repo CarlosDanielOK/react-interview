@@ -1,55 +1,47 @@
-# React + TypeScript + Vite
+# 📝 Exámen técnico (gestor de materiales y piezas)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistema de gestión para materiales y piezas de carpintería/mueblería desarrollado con **React** y **TypeScript**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✅ Tareas Completadas
 
-## Expanding the ESLint configuration
+* ✔️ Fetch de materiales desde archivo JSON.
+* ✔️ Arreglar la estructura de la tabla de materiales.
+* ✔️ Resolver los errores de la consola.
+* ✔️ Indicadores de carga (spinners) para mejorar UX.
+* ✔️ Completar la tabla de piezas.
+* ✔️ Cálculo y visualización del área total.
+* ✔️ Estilizado especial para piezas tipo CAJÓN.
+* ✔️ Bonus: Filtro dinámico por tipo de pieza (BASE, CAJON, PUERTA).
+* ✔️ Bonus: Formulario con validación para crear nuevas piezas.
+* ✔️ Bonus: Persistencia de piezas usando `localStorage`.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🖥️ Características
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- 🔍 **Gestión de materiales**: Visualización completa con propiedades como precio, espesor, textura y dimensiones.
+- 🧩 **Inventario de piezas**: Listado detallado de todas las piezas disponibles.
+- 🗂️ **Filtrado por tipo**: Posibilidad de filtrar por categoría (`BASE`, `CAJÓN`, `PUERTA`).
+- 📐 **Cálculo de área**: Cálculo automático del área total (en m²).
+- ➕ **Formulario de creación**: Añadir nuevas piezas con validación de datos.
+- 💾 **Persistencia de datos**: Guardado automático con `localStorage`.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Tecnologías
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# react-interview
+- ⚛️ **React 19** – Biblioteca principal para la interfaz de usuario.
+- 💬 **TypeScript** – Tipado estático para código más robusto.
+- ⚡ **Vite** – Herramienta de desarrollo rápida y moderna.
+- 🔀 **React Router** – Navegación entre distintas vistas.
+- 🎨 **CSS Modules** – Estilos encapsulados por componente.
+- 📦 **LocalStorage API** – Persistencia en el navegador.
+
+---
+
+## 🚀 Instalación local
+
+```bash
+git clone https://github.com/CarlosDanielOK/react-interview.git
+npm install
+npm run dev
